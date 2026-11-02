@@ -624,3 +624,15 @@ html.pf-open,html.pf-open body{overflow:hidden}
   .pf-others-h,.pf-others,.pf-about{display:none}
   .pf-actions{position:fixed;left:0;right:0;bottom:0;z-index:3;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--bg-card);border-top:1px solid var(--line-soft)}
 }
+
+/* 기장별(S·M·L) 가격표: PC는 한 줄 4칸, 휴대폰은 시술명 아래 S·M·L 3칸 */
+.size-table th:not(:first-child),.size-table td.price{text-align:right;width:17%}
+@media (max-width:640px){
+  .size-table thead{display:none}
+  .size-table tbody tr{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line-soft)}
+  .size-table tbody tr:last-child{border-bottom:0}
+  .size-table td{border-bottom:0;padding:10px 14px}
+  .size-table td:first-child{grid-column:1/-1;padding-bottom:0}
+  .size-table td.price{width:auto;text-align:left;padding-top:6px;font-size:14px}
+  .size-table td.price::before{content:attr(data-size);display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--accent-dark)}
+}

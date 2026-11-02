@@ -54,8 +54,32 @@
          },
          {
             "@type" : "Offer",
+            "name" : "Special Color M",
+            "price" : "170000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Special Color L",
+            "price" : "190000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
             "name" : "Premium Color S",
             "price" : "180000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Premium Color M",
+            "price" : "200000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Premium Color L",
+            "price" : "220000",
             "priceCurrency" : "KRW"
          },
          {
@@ -66,8 +90,32 @@
          },
          {
             "@type" : "Offer",
+            "name" : "Prestige Color (special color) M",
+            "price" : "280000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Prestige Color (special color) L",
+            "price" : "300000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
             "name" : "Bleach A S",
             "price" : "130000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Bleach A M",
+            "price" : "150000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Bleach A L",
+            "price" : "170000",
             "priceCurrency" : "KRW"
          },
          {
@@ -78,14 +126,50 @@
          },
          {
             "@type" : "Offer",
-            "name" : "Design Color S Partial",
+            "name" : "Bleach B M",
+            "price" : "170000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Bleach B L",
+            "price" : "190000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Design Color (partial) S",
             "price" : "140000",
             "priceCurrency" : "KRW"
          },
          {
             "@type" : "Offer",
-            "name" : "Design Color S Full",
+            "name" : "Design Color (partial) M",
+            "price" : "160000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Design Color (partial) L",
             "price" : "180000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Design Color (full) S",
+            "price" : "180000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Design Color (full) M",
+            "price" : "200000",
+            "priceCurrency" : "KRW"
+         },
+         {
+            "@type" : "Offer",
+            "name" : "Design Color (full) L",
+            "price" : "220000",
             "priceCurrency" : "KRW"
          }
       ],
@@ -116,7 +200,7 @@
          "@type" : "Question",
          "acceptedAnswer" : {
             "@type" : "Answer",
-            "text" : "For S length, Bleach A is ₩130,000 and Bleach B is ₩150,000. Add ₩20,000 below the shoulders and ₩40,000 below the chest."
+            "text" : "Bleach A: S ₩130,000 · M ₩150,000 · L ₩170,000. Bleach B: S ₩150,000 · M ₩170,000 · L ₩190,000. S, M and L refer to hair length; prices may change after consultation depending on hair condition."
          },
          "name" : "How much is bleach?"
       },
@@ -275,7 +359,7 @@
 <link rel="icon" href="../../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
-<link rel="stylesheet" href="../../css/style.css?v=20261102">
+<link rel="stylesheet" href="../../css/style.css?v=20261102b">
 </head>
 <body>
 
@@ -352,14 +436,22 @@
       <tbody>
         <tr><td><span class="name">Men's Color (cut included)</span></td><td class="price">₩100,000</td></tr>
         <tr><td><span class="name">Men's Special Color</span></td><td class="price">₩150,000</td></tr>
-        <tr><td><span class="name">Special Color</span></td><td class="price"><span class="opt">S ₩150,000</span></td></tr>
-        <tr><td><span class="name">Premium Color</span></td><td class="price"><span class="opt">S ₩180,000</span></td></tr>
-        <tr><td><span class="name">Prestige Color (special color)</span></td><td class="price"><span class="opt">S ₩260,000</span></td></tr>
-        <tr><td><span class="name">Bleach A</span></td><td class="price"><span class="opt">S ₩130,000</span></td></tr>
-        <tr><td><span class="name">Bleach B</span></td><td class="price"><span class="opt">S ₩150,000</span></td></tr>
-        <tr><td><span class="name">Design Color</span></td><td class="price"><span class="opt">S Partial ₩140,000</span><span class="opt">S Full ₩180,000</span></td></tr>
       </tbody>
     </table>
+    <h3 class="price-group">Color and Bleach by Length</h3>
+    <table class="price-table size-table">
+      <thead><tr><th scope="col">Menu</th><th scope="col">S</th><th scope="col">M</th><th scope="col">L</th></tr></thead>
+      <tbody>
+        <tr><td><span class="name">Special Color</span></td><td class="price" data-size="S">₩150,000</td><td class="price" data-size="M">₩170,000</td><td class="price" data-size="L">₩190,000</td></tr>
+        <tr><td><span class="name">Premium Color</span></td><td class="price" data-size="S">₩180,000</td><td class="price" data-size="M">₩200,000</td><td class="price" data-size="L">₩220,000</td></tr>
+        <tr><td><span class="name">Prestige Color (special color)</span></td><td class="price" data-size="S">₩260,000</td><td class="price" data-size="M">₩280,000</td><td class="price" data-size="L">₩300,000</td></tr>
+        <tr><td><span class="name">Bleach A</span></td><td class="price" data-size="S">₩130,000</td><td class="price" data-size="M">₩150,000</td><td class="price" data-size="L">₩170,000</td></tr>
+        <tr><td><span class="name">Bleach B</span></td><td class="price" data-size="S">₩150,000</td><td class="price" data-size="M">₩170,000</td><td class="price" data-size="L">₩190,000</td></tr>
+        <tr><td><span class="name">Design Color (partial)</span></td><td class="price" data-size="S">₩140,000</td><td class="price" data-size="M">₩160,000</td><td class="price" data-size="L">₩180,000</td></tr>
+        <tr><td><span class="name">Design Color (full)</span></td><td class="price" data-size="S">₩180,000</td><td class="price" data-size="M">₩200,000</td><td class="price" data-size="L">₩220,000</td></tr>
+      </tbody>
+    </table>
+    <p class="loc-note">S, M and L refer to hair length; prices may change after consultation depending on hair condition.</p>
     <!-- 확인 필요: 시술별 소요시간 (요청서에 없어 time 칸을 비움) -->
     <ul class="price-note">
       <li>Prices shown are base prices for each service (S length).</li>
@@ -397,7 +489,7 @@
       </details>
       <details>
         <summary>How much is bleach?</summary>
-        <div class="faq-a">For S length, Bleach A is ₩130,000 and Bleach B is ₩150,000. Add ₩20,000 below the shoulders and ₩40,000 below the chest.</div>
+        <div class="faq-a">Bleach A: S ₩130,000 · M ₩150,000 · L ₩170,000. Bleach B: S ₩150,000 · M ₩170,000 · L ₩190,000. S, M and L refer to hair length; prices may change after consultation depending on hair condition.</div>
       </details>
       <details>
         <summary>Does men's color include a cut?</summary>
@@ -448,6 +540,6 @@
   </a>
 </nav>
 
-<script src="../../js/common.js?v=20261102"></script>
+<script src="../../js/common.js?v=20261102b"></script>
 </body>
 </html>
