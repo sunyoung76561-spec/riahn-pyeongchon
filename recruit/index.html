@@ -141,6 +141,14 @@
 .recruit-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover}
 .recruit-gallery figcaption{padding:14px 16px;font-size:14px;color:var(--ink-soft)}
 .recruit-gallery figcaption b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+.store-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+.store-grid a{display:block;overflow:hidden;background:var(--line-soft)}
+.store-grid a:first-child{grid-column:1/-1}
+.store-grid img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .4s}
+.store-grid a:first-child img{aspect-ratio:16/11}
+.store-grid a:hover img{transform:scale(1.03)}
+@media(min-width:720px){.store-grid{grid-template-columns:repeat(3,1fr);gap:10px}.store-grid a:first-child{grid-column:auto}.store-grid a:first-child img{aspect-ratio:4/5}}
+.store-grid-note{margin-top:10px;text-align:center;font-size:13px;color:var(--ink-soft)}
 </style>
 <section>
   <div class="wrap">
@@ -176,10 +184,18 @@
       <h2>근무지 소개</h2>
     </div>
     <p class="recruit-lead">평촌역에서 걸어서 1분, 2020년 오픈한 시술석 15석 규모의 매장입니다. 디자이너 5명이 커트·펌·컬러·케어를 분야별로 전담하고 있습니다.</p>
-    <div class="service-photos">
-      <img src="../images/store-main.jpg" alt="평촌역 미용실 리안헤어 평촌역점 매장 내부 근무 공간" width="1600" height="1595" loading="lazy">
-      <img src="../images/store-3.jpg" alt="평촌역 미용실 리안헤어 평촌역점 매장 내부 전경" width="1600" height="1617" loading="lazy">
+    <div class="store-grid">
+      <a href="../images/store/s1/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s1/image.jpg" alt="리안헤어 평촌역점 입구와 대기 공간, 크리스탈 샹들리에" width="1971" height="2097" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s2/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s2/image.jpg" alt="리안헤어 평촌역점 매장 전경, 대기 테이블과 시술석" width="2046" height="2068" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s3/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s3/image.jpg" alt="리안헤어 평촌역점 창가 시술석과 샹들리에" width="1625" height="2030" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s4/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s4/image.jpg" alt="리안헤어 평촌역점 아치형 거울 시술석" width="2065" height="2058" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s5/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s5/image.jpg" alt="리안헤어 평촌역점 매장 내부 전경" width="1572" height="2097" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s6/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s6/image.jpg" alt="리안헤어 평촌역점 조명 거울 벽면" width="1572" height="2097" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s7/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s7/image.jpg" alt="리안헤어 평촌역점 아치 상담 공간" width="1572" height="2097" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s8/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s8/image.jpg" alt="리안헤어 평촌역점 골드 크리스탈 샹들리에" width="1572" height="2097" loading="lazy" decoding="async"></a>
+      <a href="../images/store/s9/image.jpg" target="_blank" rel="noopener"><img src="../images/store/s9/image.jpg" alt="리안헤어 평촌역점 원형 거울 시술석" width="1572" height="2097" loading="lazy" decoding="async"></a>
     </div>
+    <p class="store-grid-note">사진을 누르면 크게 볼 수 있어요.</p>
   </div>
 </section>
 
