@@ -130,16 +130,87 @@
   <nav class="breadcrumb" aria-label="현재 위치"><a href="../">홈</a><span class="sep">/</span><span>인재채용</span></nav>
 </div>
 
+<style>
+.recruit-photo{max-width:760px;margin:22px auto 0}
+.recruit-photo img{width:100%;border:1px solid var(--line-soft)}
+.recruit-photo p{margin-top:10px;text-align:center;font-size:14px;color:var(--ink-soft)}
+.recruit-table td small{font-size:12px;color:var(--ink-soft);font-weight:500}
+.recruit-gallery{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:720px){.recruit-gallery{grid-template-columns:repeat(3,1fr)}}
+.recruit-gallery figure{background:var(--bg-card);border:1px solid var(--line-soft)}
+.recruit-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.recruit-gallery figcaption{padding:14px 16px;font-size:14px;color:var(--ink-soft)}
+.recruit-gallery figcaption b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+</style>
 <section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Why Riahn</div>
+      <h2>평촌역 1분 거리, 인턴 초고속 성장</h2>
+      <p>리안헤어 평촌역점은 인턴부터 디자이너, 원장까지 함께 성장하는 매장입니다.</p>
+    </div>
+    <div class="card-grid cols-3 recruit-benefit">
+      <article class="card"><div class="card-body">
+        <div class="step">01</div>
+        <h3>평촌역에서 걸어서 1분</h3>
+        <p>출퇴근이 편한 역 바로 앞 매장입니다.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">02</div>
+        <h3>체계적인 단계별 교육</h3>
+        <p>본사교육, 내부 아카데미, 매장 자체 교육으로 실전 위주로 배웁니다. 교육비 공제는 없습니다.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">03</div>
+        <h3>인턴에서 디자이너, 원장까지</h3>
+        <p>인턴으로 시작해 디자이너가 된 친구들이 많이 근무하고 있고, 인턴에서 원장이 된 친구들도 많습니다.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<section class="pt0">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Workplace</div>
       <h2>근무지 소개</h2>
     </div>
-    <p class="recruit-lead">평촌역 인근, 2020년 오픈한 시술석 15석 규모의 매장입니다. 디자이너 5명이 커트·펌·컬러·케어를 분야별로 전담하고 있습니다.</p>
+    <p class="recruit-lead">평촌역에서 걸어서 1분, 2020년 오픈한 시술석 15석 규모의 매장입니다. 디자이너 5명이 커트·펌·컬러·케어를 분야별로 전담하고 있습니다.</p>
     <div class="service-photos">
       <img src="../images/store-main.jpg" alt="평촌역 미용실 리안헤어 평촌역점 매장 내부 근무 공간" width="1600" height="1595" loading="lazy">
       <img src="../images/store-3.jpg" alt="평촌역 미용실 리안헤어 평촌역점 매장 내부 전경" width="1600" height="1617" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Career Path</div>
+      <h2>성장 과정</h2>
+      <p>단계마다 목표가 분명해서, 지금 무엇을 배워야 할지 알 수 있습니다.</p>
+    </div>
+    <div class="card-grid cols-4 recruit-benefit">
+      <article class="card"><div class="card-body">
+        <div class="step">STEP 1</div>
+        <h3>인턴</h3>
+        <p>단계별 실전 교육으로 디자이너 데뷔를 목표로 합니다.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">STEP 2</div>
+        <h3>초급 디자이너</h3>
+        <p>상담법과 고정고객 만드는 법을 익혀 안정된 매출을 만듭니다.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">STEP 3</div>
+        <h3>경력 디자이너</h3>
+        <p>경영 교육을 받으며 후배 육성과 매장 관리를 함께합니다.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">STEP 4</div>
+        <h3>원장</h3>
+        <p>직원과 소통하며 매장을 운영하고, 함께 성장하는 팀을 만듭니다.</p>
+      </div></article>
     </div>
   </div>
 </section>
@@ -158,6 +229,7 @@
         <li><b>평일</b><span>11:00 ~ 20:00</span></li>
         <li><b>토요일</b><span>10:00 ~ 20:00</span></li>
         <li><b>일요일</b><span>10:00 ~ 19:00 <em>한 시간 일찍 퇴근</em></span></li>
+        <li><b>휴게</b><span>휴게시간 1시간 보장</span></li>
       </ul>
     </div>
 
@@ -165,7 +237,7 @@
       <article class="card recruit-job">
         <div class="card-body">
           <div class="tag">Partner</div>
-          <h3>파트너(인턴)</h3>
+          <h3>파트너(인턴) <span class="recruit-badge">초고속 성장 지원</span></h3>
           <p class="recruit-job-lead">본사교육 + 내부아카데미 + 매장자체교육으로 체계적이고 빠른 성장을 지원합니다.</p>
           <table class="price-table recruit-pay">
             <thead><tr><th scope="col">근무형태</th><th scope="col">급여(월)</th></tr></thead>
@@ -176,8 +248,10 @@
             </tbody>
           </table>
           <ul class="recruit-list">
-            <li>식사 무료 지원</li>
-            <li>인턴부터 현재 디자이너로 활동하는 장기근속자 다수</li>
+            <li>휴게시간 1시간 보장</li>
+            <li>식사 무료 지원 (공제 없음)</li>
+            <li>교육비·모델 시술 공제 없음</li>
+            <li>인턴에서 디자이너가 된 장기근속자 다수</li>
             <li>4일제 가능</li>
           </ul>
         </div>
@@ -200,9 +274,92 @@
             <li>정착지원 기간 내 매출이 높으면 바로 프로테이지 전환 가능</li>
             <li>시술 첫 순번 3개월 보장</li>
             <li>정착지원 기간 이후 프로테이지 40% 전환</li>
+            <li>휴무는 한 달 전에 미리 정할 수 있습니다</li>
           </ul>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Education</div>
+      <h2>교육 과정</h2>
+      <p>인턴 단계별 교육부터 디자이너 교육까지, 실전 위주로 배웁니다.</p>
+    </div>
+
+    <div class="recruit-post">
+      <div class="recruit-post-title"><h3>파트너 승급 일정</h3><span>TOTAL 1년 6개월</span></div>
+      <p class="recruit-lead" style="text-align:left;margin:0 0 14px">초급반 6개월, 경력반 6개월, 승급반 6개월을 마치면 디자이너 승급 기회가 주어집니다.</p>
+      <table class="price-table recruit-table">
+        <thead><tr><th scope="col">과정</th><th scope="col">배우는 내용</th></tr></thead>
+        <tbody>
+          <tr><td>초급반<br><small>1~6개월</small></td><td>모발 생리학, 드라이 기본, 파마 기초(와인딩), 파마 기초(연화·약처리), 컬러 기초</td></tr>
+          <tr><td>경력반<br><small>7~12개월</small></td><td>파마 디자인 Ⅰ, 파마 디자인 Ⅱ, 디자인 컬러, 드라이</td></tr>
+          <tr><td>승급반<br><small>13~18개월</small></td><td>상담·마케팅 교육, 여자 커트, 남자 커트, 모델 작업 및 포트폴리오</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-grid cols-4 recruit-benefit">
+      <article class="card"><div class="card-body">
+        <div class="step">입사 직후</div>
+        <h3>새싹반</h3>
+        <p>미용 기본자세, 서비스 교육, 샴푸·머리 말리기·시술 준비</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">1~6개월</div>
+        <h3>초급반</h3>
+        <p>모발 생리학, 드라이 기본, 파마·컬러 기초</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">7~12개월</div>
+        <h3>경력반</h3>
+        <p>파마 디자인, 디자인 컬러, 드라이</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <div class="step">13~18개월</div>
+        <h3>승급반</h3>
+        <p>상담·마케팅, 여자·남자 커트, 모델 작업과 포트폴리오</p>
+      </div></article>
+    </div>
+
+    <div class="recruit-photo">
+      <img src="../images/recruit-edu/image.jpg" alt="리안헤어 본사 아카데미 교육과 승급반 수업 모습" width="1660" height="1660" loading="lazy">
+      <p>본사 아카데미 교육, 승급반 수업, 군부대 봉사까지 함께합니다.</p>
+    </div>
+
+    <ul class="recruit-perks" style="margin-top:22px">
+      <li>승급 모델 시술 때 관리자 1:1 개인지도</li>
+      <li>디자이너 교육: 상담법, 고정고객 만드는 법, 클레임 대처</li>
+      <li>디자이너 SNS 마케팅 교육</li>
+      <li>본사교육 + 내부 아카데미 + 매장 자체 교육</li>
+    </ul>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Our Team</div>
+      <h2>화목한 매장 식구들</h2>
+      <p>함께 밥 먹고, 함께 배우고, 함께 웃는 매장입니다.</p>
+    </div>
+    <div class="recruit-gallery">
+      <figure>
+        <img src="../images/recruit-team/image.jpg" style="object-position:50% 0%" alt="리안헤어 평촌역점 직원 식사, 매일 차려지는 맛있는 밥" width="858" height="2576" loading="lazy">
+        <figcaption><b>맛있는 밥</b>매일 든든한 식사를 무료로 제공합니다.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/recruit-team/image.jpg" style="object-position:50% 50%" alt="리안헤어 체육대회와 야유회, 직원들 단체 사진" width="858" height="2576" loading="lazy">
+        <figcaption><b>체육대회·야유회</b>다 같이 놀고 웃는 시간도 소중히 여깁니다.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/recruit-team/image.jpg" style="object-position:50% 100%" alt="리안헤어 직원 송년회와 행사, 화목한 매장 분위기" width="858" height="2576" loading="lazy">
+        <figcaption><b>송년회·행사</b>서로 챙겨 주는 가족 같은 분위기입니다.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -214,14 +371,20 @@
       <h2>근무혜택</h2>
     </div>
     <ul class="recruit-perks">
+      <li>식사 제공 (공제 없음)</li>
+      <li>휴식시간 보장</li>
       <li>리안헤어 본사교육</li>
       <li>수건업체 이용</li>
       <li>생일날 인턴 당일 조기퇴근</li>
       <li>문화생활, 회식비 지원</li>
-      <li>야유회, 체육대회, 송년회</li>
+      <li>목표 매출 달성 회식, 각종 수당</li>
+      <li>신년회, 송년회, 야유회, 체육대회</li>
+      <li>명절 선물 (과일바구니 또는 소고기)</li>
+      <li>모델 시술 지원 (공제 없음)</li>
       <li>해외연수 기회 제공</li>
       <li>SNS, 네이버 광고 업체 지원</li>
       <li>디자이너 모델작업, 마케팅 지원</li>
+      <li>매출에 따른 청소 이모님</li>
     </ul>
   </div>
 </section>
