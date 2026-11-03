@@ -642,3 +642,27 @@ html.pf-open,html.pf-open body{overflow:hidden}
   .size-table td.price{width:auto;text-align:left;padding-top:6px;font-size:14px}
   .size-table td.price::before{content:attr(data-size);display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--accent-dark)}
 }
+
+/* 인재채용: 모집 카드 · 급여표 · 근무혜택 */
+.recruit-hours{max-width:760px;margin:0 auto 22px;background:var(--bg-card);border:1px solid var(--line-soft);padding:18px 20px}
+.recruit-hours-title{font-size:12px;letter-spacing:.16em;color:var(--accent-dark);font-weight:700;margin-bottom:8px}
+.recruit-hours ul{display:grid;gap:6px}
+.recruit-hours li{display:flex;gap:14px;font-size:15px}
+.recruit-hours li b{flex:0 0 56px;color:var(--ink);font-weight:700}
+.recruit-hours li em{font-style:normal;font-size:12.5px;color:var(--accent-dark);margin-left:6px;white-space:nowrap}
+.recruit-jobcards{max-width:960px;margin:0 auto}
+.recruit-job:hover{box-shadow:none}
+.recruit-job .card-body{padding:24px 20px}
+.recruit-job h3{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:20px}
+.recruit-badge{font-size:12px;font-weight:700;color:#fff;background:var(--accent-dark);padding:3px 9px;border-radius:2px;letter-spacing:.02em}
+.recruit-job .recruit-job-lead{font-size:14px;margin-top:8px}
+.recruit-pay{margin:16px 0 14px}
+.recruit-pay td{padding:12px 14px;font-size:15px}
+.recruit-pay th{padding:10px 14px 9px}
+.recruit-perks{max-width:760px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:720px){.recruit-perks{grid-template-columns:repeat(2,1fr)}}
+.recruit-perks li{background:var(--bg-card);border:1px solid var(--line-soft);padding:14px 18px 14px 40px;font-size:14.5px;position:relative}
+.recruit-perks li::before{content:"";position:absolute;left:18px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--accent)}
+.recruit-sms{max-width:420px;margin:0 auto 20px;background:var(--bg-card);border:1px solid var(--line-soft);padding:16px 20px;text-align:center}
+.recruit-sms p{font-size:14.5px;color:var(--ink)}
+.recruit-contact{text-align:center}
