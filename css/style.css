@@ -169,15 +169,10 @@ section{padding:56px 0}
 @media(min-width:960px){.card-grid.cols-4{grid-template-columns:repeat(4,1fr)}}
 
 /* ===== 디자이너 ===== */
-.designer-grid{display:grid;gap:18px}
-.designer-card{background:var(--bg-card);border:1px solid var(--line-soft);overflow:hidden}
-.designer-card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 30%}
-/* 디자이너 사진별 얼굴 위치 (눈높이 위 1/3) */
-.designer-card img[src$="designer-eunchae.jpg"]{object-position:50% 30%}
-.designer-card img[src$="designer-taeeun.jpg"]{object-position:55% 30%}
-.designer-card img[src$="designer-yeondu.jpg"]{object-position:44% 30%}
-.designer-card img[src$="designer-dana.jpg"]{object-position:51% 30%}
-.designer-card img[src$="designer-haru.jpg"]{object-position:58% 30%}
+/* 디자이너 카드: 모든 카드 같은 크기·비율·테두리, 묶음 가운데 정렬 (PC 3열 / 태블릿 2열 / 휴대폰 1열) */
+.designer-grid{--dg-gap:20px;--dg-cols:1;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--dg-gap);width:100%;max-width:1080px;margin-left:auto;margin-right:auto;box-sizing:border-box}
+.designer-card{box-sizing:border-box;flex:0 0 calc((100% - (var(--dg-cols) - 1) * var(--dg-gap)) / var(--dg-cols));min-width:0;max-width:100%;margin:0;background:#F3EEE8;border:1px solid var(--line-soft);border-radius:14px;overflow:hidden}
+.designer-card > img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center top;background:#F3EEE8;filter:brightness(1.02) saturate(.95) contrast(.98)}
 .designer-body{padding:22px}
 .designer-body .role{font-size:11.5px;letter-spacing:.2em;color:var(--accent-dark);font-weight:700;text-transform:uppercase}
 .designer-body h3{font-size:19px;margin-top:4px}
@@ -185,7 +180,9 @@ section{padding:56px 0}
 .designer-body .field{margin-top:9px;font-size:13.5px;font-weight:600}
 .designer-body p{margin-top:9px;font-size:14px;color:var(--ink-soft)}
 .designer-body .promo{margin-top:10px;font-size:13px;color:var(--accent-dark);font-weight:700}
-@media(min-width:720px){.designer-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:640px){.designer-grid{--dg-cols:2}}
+@media(min-width:1024px){.designer-grid{--dg-cols:3;--dg-gap:24px}}
+@media(max-width:639px){.designer-grid{max-width:440px}}
 
 /* ===== 갤러리 ===== */
 .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
