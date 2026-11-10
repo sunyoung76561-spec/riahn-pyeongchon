@@ -37,3 +37,18 @@
     video.play().catch(function(){});
   }
 })();
+
+// 블로그 메뉴 (한국어 페이지 메뉴줄·모바일 메뉴·푸터에 추가)
+(function(){
+  if((document.documentElement.lang||'').indexOf('ko')!==0) return;
+  var onBlog=/\/blog\//.test(location.pathname);
+  document.querySelectorAll('.gnb, .mobile-nav, .footer-nav').forEach(function(nav){
+    if(nav.querySelector('a[href$="blog/"]')) return;
+    var g=nav.querySelector('a[href$="gallery/"]'); if(!g) return;
+    var a=document.createElement('a');
+    a.href=g.getAttribute('href').replace(/gallery\/$/,'blog/');
+    a.textContent='블로그';
+    if(onBlog) a.className='active';
+    g.insertAdjacentElement('afterend',a);
+  });
+})();
